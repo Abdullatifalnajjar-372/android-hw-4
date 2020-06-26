@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/calculater"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/Grade"
+        android:layout_width="wrap_content"
+        android:layout_height="76dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:background="#FFFFFF"
+        android:fontFamily="casual"
+        android:text="Grade Calculater"
+        android:textColor="#1C181A"
+        android:textSize="36sp" />
+
+    <Button
+        android:id="@+id/Reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="94dp"
+        android:layout_marginEnd="16dp"
+        android:background="#D32F2F"
+        android:text="Reset"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="123dp"
+        android:layout_height="71dp"
+        android:layout_below="@+id/Finale"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="14dp"
+        android:background="#D32F2F"
+        android:text="Calculate"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/Quizzes"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@+id/Grade"
+        android:layout_alignEnd="@+id/Grade"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="113dp"
+        android:layout_marginEnd="45dp"
+        android:background="#CC121111"
+        android:ems="10"
+        android:hint="   Quizzes 15%"
+        android:inputType="textPersonName"
+        android:textColorHint="#FFFFFF"
+        android:textSize="24sp"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/Homework"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@+id/Quizzes"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop ="100dp"
+        android:background="#CC121111"
+        android:ems="10"
+        android:hint="  Homework25%"
+        android:inputType="textPersonName"
+        android:textColorHint="#FFFFFF"
+        android:textSize="24sp" />
+
+
+    <EditText
+        android:id="@+id/Mid"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@+id/Homework"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="0dp"
+        android:background="#CC121111"
+        android:ems="10"
+        android:hint="  Mid Terms 30%"
+        android:inputType="textPersonName"
+        android:textColorHint="#FFFFFF"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/Finale"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@+id/Mid"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="-2dp"
+        android:background="#CC121111"
+        android:hint="     Finale 30%"
+        android:inputType="textPersonName"
+        android:textColor="#C2185B"
+        android:textColorHint="#FFFFFF"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="142dp"
+        android:layout_height="58dp"
+        android:layout_below="@+id/button2"
+        android:layout_alignEnd="@+id/button2"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="-11dp"
+        android:background="#8E8585"
+        android:fontFamily="serif-monospace"
+        android:text=" Result"
+        android:textSize="30sp" />
+
+
+</RelativeLayout>
